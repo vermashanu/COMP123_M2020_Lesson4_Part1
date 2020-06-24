@@ -32,7 +32,7 @@ namespace COMP123_M2020_Lesson4_Part1
             }
         }
         // CONSTRUCTOR
-        Person(string name, int age)
+        public Person(string name, int age)
         {
             m_name = name;
             m_age = age;
@@ -42,6 +42,26 @@ namespace COMP123_M2020_Lesson4_Part1
 
             // PUBLIC METHODS
 
-        }
+            public void saysHello()
+            {
+                Console.WriteLine($"{Name} says Hello");
+            }
+
+            /// <summary>
+            ///
+            /// This method overrides the ToString method of parent class
+            /// </summary>
+            /// <returns></returns>
+            public override string ToString()
+            {
+                string outputString = "";
+
+                outputString += $"Name : {Name}  \n";
+                outputString += $"Age  : {Age}     ";
+
+                return outputString;
+
+            }
+    }
     }
 

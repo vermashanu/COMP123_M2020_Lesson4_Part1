@@ -6,7 +6,13 @@ namespace COMP123_M2020_Lesson4_Part1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Person person = new Person("shivani", 22);
+
+            person.saysHello();
+
+            Console.WriteLine(person.ToString());
+
+            Console.ReadLine();
         }
     }
 }
